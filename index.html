@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CAFE</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>Welcome To My Cafe</header>
+
+
+    <section class="main-container">
+        <div class="menu-section">
+            <div class="Menu">
+                <h2>Menu</h2>
+                <h3>Drinks</h3>
+                <div class="category">
+                    <div class="item">
+                        <img src="tea.jfif" alt="Tea">
+                        <button onclick="addToOrder('Tea',20)">Tea - ₹20</button>
+                    </div>
+
+                    <div class="item">
+                        <img src="coffee.jfif" alt="Coffee">
+                        <button onclick="addToOrder('Coffee', 45)">Coffee - ₹40</button>
+                    </div>
+
+                    <div class="item">    
+                        <img src="Cola.jfif" alt="Cola">
+                        <button onclick="addToOrder('Cola', 50)">Cola - ₹50</button>
+                    </div>
+
+                    <div class="item">
+                        <img src="lemon tea.jfif" alt="Coffee">
+                        <button onclick="addToOrder('Lemon Tea', 35)">Lemon Tea - ₹35</button>
+                    </div>
+        
+    <h3>Food</h3>
+        <div class="category">
+            <div class="item">
+            <img src="pizza.jpeg" alt="pizza">
+            <button onclick="addToOrder('Pizza', 120)">Pizza - ₹120</button>
+            </div>
+        
+            <div class="item">
+            <img src="burger.jfif" alt="burger">
+            <button onclick="addToOrder('Burger', 90)">Burger - ₹90</button>
+            </div>
+
+            <div class="item">
+            <img src="fries.jfif" alt="fries">
+            <button onclick="addToOrder('Fries', 55)">Fries - ₹55</button>
+            </div>
+
+            <div class="item">
+            <img src="roll.jfif" alt="roll">
+            <button onclick="addToOrder('Roll', 80)">Roll - ₹80</button>
+            </div>
+        </div>
+
+    <h3>Desserts</h3>
+        <div class="category">
+            <div class="item">
+            <img src="icecream.jfif" alt="icecream">
+            <button onclick="addToOrder('Icecream', 190)">Icecream - ₹190</button>
+            </div>
+            <div class="item">
+            <img src="milkshake.jfif" alt="milkshake">
+            <button onclick="addToOrder('Milkshake', 95)">Milkshake - ₹95</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+    
+<div class="order-section">
+    <section class="order-summary">
+        <h2>Your Order</h2>
+        <ul id="order-list"></ul>
+        <p id="total-price">Total: ₹0</p>
+        <button onclick="generateBill()">Generate Bill</button>
+    </section>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
